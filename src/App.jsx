@@ -17,7 +17,7 @@ export default function App() {
     };
     return (
         <>
-            <BrowserRouter basename="/">
+            <BrowserRouter basename="https://cherifi-houdaifa.github.io/Shopping-Cart">
                 <NavBar cartItems={cart.length} />
                 <Routes>
                     <Route path="/" element={<Home />} />
