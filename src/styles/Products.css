@@ -1,0 +1,12 @@
+.products {
+    min-height: calc(100vh - 140px);
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
+    margin: 30px;
+}
+.products > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
