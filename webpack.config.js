@@ -1,4 +1,3 @@
-const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const path = require('path');
 
@@ -45,9 +44,7 @@ module.exports = {
         new HtmlWebpackPlugin({
             filename: 'index.html',
             template: path.resolve(__dirname, 'public/index.html'),
-        }),
-        new webpack.DefinePlugin({
-            'process.env.PUBLIC_PATH': process.env.PUBLIC_PATH,
-        }),
+            publicPath: "/Shopping-Cart/"
+        })
     ],
 };
